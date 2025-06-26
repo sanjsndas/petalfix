@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Petalfix Flower Care Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #8BC34A;
+            --accent-color: #FF9800;
+            --dark-green: #2E7D32;
+            --light-green: #C8E6C9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1526397751294-331021109fbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+            color: white;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+            transform: translateY(-2px);
+        }
+
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .footer {
+            background-color: var(--dark-green);
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #F57C00;
+            transform: translateY(-2px);
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <img src="p1.png" alt="Petalfix Logo" class="h-10 w-10">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Petalfix</h1>
+                        <p class="text-xs text-gray-600">Because every bloom matters</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 hover:text-green-600 font-medium transition duration-300">Home</a>
+                    <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-600 font-medium transition duration-300">Privacy</a>
+                    <a href="terms.html" class="nav-link text-gray-800 hover:text-green-600 font-medium transition duration-300">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-600 font-medium transition duration-300">Cookies</a>
+                    <a href="contact.html" class="nav-link text-gray-800 hover:text-green-600 font-medium transition duration-300" aria-current="page">Contact Us</a>
+                </div>
+                <button class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center">
+        <div class="px-4 md:px-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">We're here to help with all your floral care needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="contact-form p-8">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name *</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:outline-none" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:outline-none" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:outline-none">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject *</label>
+                            <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:outline-none" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="consultation">Plant Consultation</option>
+                                <option value="service">Service Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message *</label>
+                            <textarea id="message" rows="6" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:outline-none" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-white font-bold py-3 px-6 rounded-lg w-full hover:shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <div class="contact-info-card p-8 mb-8">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Our Contact Information</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Address</h3>
+                                    <p class="text-gray-600">36 East 8th Street<br>New York, NY 10003<br>United States</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Phone</h3>
+                                    <p class="text-gray-600">Main: (123) 456-7890<br>Support: (123) 456-7891</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Email</h3>
+                                    <p class="text-gray-600">General: info@petalfix.com<br>Support: support@petalfix.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Hours</h3>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card p-8">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Emergency Plant Care</h2>
+                        <p class="mb-6 text-gray-600">For urgent plant health emergencies outside of normal business hours, please call our emergency hotline at <span class="font-semibold">(123) 456-7899</span>. Our on-call specialists are available 24/7 to assist with critical plant health issues.</p>
+                        <button class="btn-primary text-white font-bold py-3 px-6 rounded-lg w-full hover:shadow-lg">
+                            <i class="fas fa-phone-alt mr-2"></i> Call Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Detailed Contact Information</h2>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">1. Customer Support</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Our customer support team is available Monday through Friday from 9:00 AM to 6:00 PM EST to assist with all your questions and concerns. You can reach them by phone at (123) 456-7890 or by email at support@petalfix.com. For non-urgent inquiries, fill out our contact form and expect a response within 24 hours. Our support specialists are trained to handle a wide range of issues from account questions to technical difficulties with our online services.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">2. Technical Support</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For issues related to our website, mobile app, or online tools, our technical support team is standing by to help. Contact them at techsupport@petalfix.com or call (123) 456-7892 during business hours. When contacting technical support, please provide detailed information about your issue including the device you're using, browser version, and screenshots if possible. This will help us resolve your issue more efficiently. For common technical issues, check our online Knowledge Base first for quick solutions.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">3. Billing Inquiries</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For questions regarding payments, invoices, or account billing, please contact our billing department at billing@petalfix.com or call (123) 456-7893. Our billing specialists are available Monday through Friday from 8:00 AM to 5:00 PM EST. When calling about a billing issue, please have your account number or invoice number ready. For faster service, you can also log in to your account to view and pay invoices online through our secure payment portal.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">4. Plant Consulting Services</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Our plant health consultants can be reached at consultants@petalfix.com or (123) 456-7894. They are available for scheduled consultations Monday through Friday from 9:30 AM to 4:30 PM EST. For complex plant health issues, please submit photos of the affected plants along with your contact information. Our consultants typically respond within 1-2 business days. Emergency consultations outside these hours are available for established clients with critical plant health issues.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">5. Corporate Office</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Petalfix's corporate headquarters is located at 36 East 8th Street, New York, NY 10003. For corporate inquiries, partnerships, or media relations, please contact corporate@petalfix.com or call (123) 456-7895 during regular business hours. When visiting our corporate office, please schedule an appointment in advance as we do not accommodate walk-in visitors. Press inquiries should be directed to our PR department at the same location but marked "Attn: Public Relations".</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">6. Mailing Address</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">All written correspondence should be sent to Petalfix, 36 East 8th Street, New York, NY 10003. Please clearly mark the department (Customer Service, Billing, etc.) on the envelope. For legal notices, please send documents to the same address marked "Attn: Legal Department". We recommend using certified mail for important documents. Allow 7-10 business days for processing of mailed correspondence. For faster service, consider contacting us through our website or by phone.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">7. Careers & Employment</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For employment opportunities and career inquiries, please visit our Careers page at www.petalfix.com/careers or email your resume to careers@petalfix.com. No phone calls please. Our HR department reviews all applications and will contact qualified candidates within 2-3 weeks of application. We offer competitive compensation and benefits for horticultural specialists, customer service representatives, and business operations staff. Internship opportunities are also available seasonally.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">8. Wholesale Inquiries</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Businesses interested in our wholesale plant health products and services can contact our wholesale department at wholesale@petalfix.com or call (123) 456-7896. Our wholesale team is available Monday through Thursday from 8:00 AM to 4:00 PM EST. Please provide your business license information when making initial contact. Minimum order requirements apply to wholesale purchases. We offer volume discounts for nurseries, landscaping businesses, and other commercial customers.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">9. Media & Press</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Members of the press should direct all inquiries to press@petalfix.com or call (123) 456-7897. Our PR team is available Monday through Friday from 9:00 AM to 5:00 PM EST. For after-hours media inquiries related to breaking news, please call the main number and select the emergency press option. We provide expert commentary on plant health topics, environmental issues, and home gardening trends. High-resolution images and company information are available upon request.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">10. International Inquiries</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For customers outside the United States, please contact international@petalfix.com or call +1 (123) 456-7898. Our international team handles inquiries Monday through Friday from 8:00 AM to 6:00 PM EST to accommodate time zone differences. We currently serve clients in Canada, the UK, and parts of Europe with select services. For assistance in languages other than English, we have Spanish and French speaking representatives available. Please specify your preferred language when contacting us. We aim to provide the same level of service and support to our international clients as we do to our domestic customers.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">11. Community Engagement</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Petalfix is committed to community engagement and sustainability. For inquiries related to community programs, partnerships, or sponsorship opportunities, please contact community@petalfix.com. We actively participate in local events and initiatives aimed at promoting environmental awareness and plant care education. Our community outreach team is available to discuss potential collaborations and support for local organizations.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">12. Feedback and Suggestions</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We value your feedback! If you have suggestions for improving our services or website, please send them to feedback@petalfix.com. Your input helps us enhance our offerings and better serve our customers. We review all feedback and may reach out for further clarification or to discuss your ideas. Thank you for helping us grow!</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">13. Social Media</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Stay connected with us on social media! Follow us on Instagram, Facebook, and Twitter for the latest updates, tips, and promotions. You can also reach out to us through our social media channels for quick questions or comments. Our social media team is active and ready to engage with our community.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">14. Newsletter Subscription</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Sign up for our newsletter to receive exclusive offers, plant care tips, and updates on new services. Visit our website to subscribe or email newsletter@petalfix.com. We respect your privacy and will not share your information with third parties. You can unsubscribe at any time.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">15. Events and Workshops</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Join us for our upcoming events and workshops focused on plant care and gardening. For information on scheduling and registration, please contact events@petalfix.com. We offer a variety of workshops for all skill levels, from beginner to advanced. Our events are a great way to learn and connect with fellow plant enthusiasts.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">16. Plant Health Resources</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Explore our online resources for plant health tips, guides, and articles. Visit our website's resource section or contact resources@petalfix.com for specific inquiries. We provide a wealth of information to help you care for your plants effectively. Our team of experts regularly updates these resources to ensure you have access to the latest information.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">17. Sustainability Initiatives</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">At Petalfix, we are dedicated to sustainability. For inquiries about our eco-friendly practices and initiatives, please contact sustainability@petalfix.com. We are committed to reducing our environmental impact and promoting sustainable practices in the floral industry. Learn more about our efforts and how you can get involved.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">18. Partnerships and Collaborations</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">If you are interested in partnering with Petalfix for collaborative projects or initiatives, please reach out to partnerships@petalfix.com. We are open to exploring opportunities that align with our mission and values. Our partnerships aim to create positive impacts in the community and the environment.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">19. Legal Inquiries</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For legal inquiries or matters, please contact our legal department at legal@petalfix.com. We take all legal matters seriously and will respond promptly to any inquiries. Please provide detailed information regarding your inquiry to facilitate a timely response.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">20. Accessibility</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We strive to make our services accessible to everyone. If you have any questions or need assistance regarding accessibility, please contact accessibility@petalfix.com. We are committed to ensuring that all customers can access our services and resources without barriers.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">21. Customer Satisfaction</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Your satisfaction is our priority. If you have any concerns about your experience with Petalfix, please reach out to us at satisfaction@petalfix.com. We value your feedback and are dedicated to resolving any issues you may encounter. Our goal is to ensure that every customer is happy with our services.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">22. Product Information</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For detailed information about our products and services, please contact productinfo@petalfix.com. Our team can provide specifications, pricing, and availability for all our offerings. We are here to help you find the right solutions for your plant care needs.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">23. Community Support</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We believe in giving back to the community. For inquiries about our community support programs, please contact communitysupport@petalfix.com. We are involved in various initiatives aimed at supporting local organizations and promoting environmental stewardship.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">24. Research and Development</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For inquiries related to our research and development efforts, please contact research@petalfix.com. We are committed to advancing plant health science and continuously improving our services through research. Collaborations with academic institutions and industry experts are welcome.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">25. Testimonials</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We love hearing from our customers! If you would like to share your experience with Petalfix, please send your testimonial to testimonials@petalfix.com. Your feedback helps us improve and inspires others to choose our services. We may feature your testimonial on our website or marketing materials.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">26. FAQs</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For frequently asked questions, please visit our FAQ page on our website. If you have a question that is not answered there, feel free to contact us at faq@petalfix.com. We are here to provide you with the information you need.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">27. Online Resources</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Explore our online resources for plant care tips, guides, and articles. Visit our website's resource section or contact resources@petalfix.com for specific inquiries. We provide a wealth of information to help you care for your plants effectively. Our team of experts regularly updates these resources to ensure you have access to the latest information.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">28. Customer Loyalty Program</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Join our customer loyalty program to earn rewards for your purchases. For more information, please contact loyalty@petalfix.com. Our program offers exclusive discounts, early access to sales, and special promotions for our loyal customers. Sign up today to start enjoying the benefits!</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">29. Gift Cards</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Gift cards are available for purchase on our website. For inquiries about gift cards, please contact giftcards@petalfix.com. Our gift cards make the perfect present for plant lovers and can be redeemed for any of our services. They are available in various denominations.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">30. Seasonal Promotions</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Stay tuned for our seasonal promotions and special offers! For inquiries about current promotions, please contact promotions@petalfix.com. We regularly update our offerings to provide our customers with the best value. Don’t miss out on our limited-time deals!</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">31. Plant Care Workshops</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Join us for our upcoming plant care workshops! For more information, please contact workshops@petalfix.com. Our workshops cover a variety of topics, from basic plant care to advanced horticultural techniques. They are designed for all skill levels and are a great way to learn and connect with fellow plant enthusiasts.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">32. Community Events</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We host community events throughout the year. For information on upcoming events, please contact events@petalfix.com. Our events are designed to engage the community and promote plant care education. Join us for fun activities and learn more about caring for your plants!</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">33. Environmental Initiatives</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">At Petalfix, we are committed to environmental sustainability. For inquiries about our environmental initiatives, please contact environment@petalfix.com. We actively participate in programs aimed at reducing our carbon footprint and promoting eco-friendly practices in the floral industry.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">34. Research Collaborations</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We welcome research collaborations with academic institutions and industry experts. For inquiries, please contact researchcollab@petalfix.com. Our goal is to advance plant health science and improve our services through research and innovation.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">35. Customer Testimonials</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">We love hearing from our customers! If you would like to share your experience with Petalfix, please send your testimonial to testimonials@petalfix.com. Your feedback helps us improve and inspires others to choose our services. We may feature your testimonial on our website or marketing materials.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">36. FAQs</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">For frequently asked questions, please visit our FAQ page on our website. If you have a question that is not answered there, feel free to contact us at faq@petalfix.com. We are here to provide you with the information you need.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">37. Online Resources</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Explore our online resources for plant care tips, guides, and articles. Visit our website's resource section or contact resources@petalfix.com for specific inquiries. We provide a wealth of information to help you care for your plants effectively. Our team of experts regularly updates these resources to ensure you have access to the latest information.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">38. Customer Loyalty Program</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Join our customer loyalty program to earn rewards for your purchases. For more information, please contact loyalty@petalfix.com. Our program offers exclusive discounts, early access to sales, and special promotions for our loyal customers. Sign up today to start enjoying the benefits!</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">39. Gift Cards</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Gift cards are available for purchase on our website. For inquiries about gift cards, please contact giftcards@petalfix.com. Our gift cards make the perfect present for plant lovers and can be redeemed for any of our services. They are available in various denominations.</p>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">40. Seasonal Promotions</h2>
+            <div class="contact-point">
+                <p class="text-gray-700">Stay tuned for our seasonal promotions and special offers! For inquiries about current promotions, please contact promotions@petalfix.com. We regularly update our offerings to provide our customers with the best value. Don’t miss out on our limited-time deals!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-white">© 2023 Petalfix. All rights reserved.</p>
+            <p class="text-white">Address: 36 East 8th Street, New York, NY 10003, United States</p>
+            <p class="text-white">Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
